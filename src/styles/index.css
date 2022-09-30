@@ -1,0 +1,33 @@
+@font-face {
+  font-family:  'Roboto';
+  src: url('/src/assets/Roboto-Regular.ttf');
+}
+
+html{
+  height: 100%;
+  background-color:#262936;
+  background: radial-gradient( rgb(36, 48, 62), rgba(9, 10, 15, 1));
+  /* overflow: hidden; */
+}
+
+body {
+  background:transparent;
+  }
+
+body,html {
+  padding: 0 !important;
+    margin: 0;
+  width: 100%;
+  /* height: 100vh; */
+ 
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

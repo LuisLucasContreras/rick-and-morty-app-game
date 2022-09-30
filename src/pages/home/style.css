@@ -1,0 +1,79 @@
+.home{
+    min-height: 1000px;
+}
+
+.home .portada{
+    position: relative;
+}
+.home .main-data{
+    top: 550px;
+    left: 50%;
+    box-sizing: border-box;
+    align-items: center ;
+   justify-content: space-between !important;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    z-index: 3;
+    padding:  0 25px;
+    height: 90px;
+    width: 60%;
+    border-radius: 6px;
+    background-color: #08070ae5;
+}
+
+
+
+.home .navegacion-main{
+    align-items: center !important;
+    margin: 80px 0;
+    width: 100%;
+    border-radius: 6px;
+  
+}
+.home .navegacion-main .navegacion{
+    height: 130px;
+  
+    margin-top: 75px;
+    width: 80%;
+
+    border-radius: 6px;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.home .navegacion-main .navegacion:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.home .navegacion-main .navegacion img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.home .navegacion-main h2{
+    position: absolute;
+    margin: 0;
+    z-index: 4;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 568px) {
+    
+    .home .main-data{
+        padding:  0 15px;
+        width: 80%;
+        
+    }
+
+    .home .navegacion-main .navegacion{
+        height: 120px;
+      
+     
+    }
+    
+}

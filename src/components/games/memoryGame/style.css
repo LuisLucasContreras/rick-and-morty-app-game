@@ -1,0 +1,87 @@
+.game{
+    margin: 50px 0;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+
+.info-game {
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #09080d6a;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px 20px;
+    justify-content: space-between;
+}
+
+
+.cards-contains {
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: wrap;
+    grid-gap: 25px;
+}
+
+
+.cards-contains .card, .card img {
+   
+    height: 140px ;
+    width: 140px;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+.card img {
+   object-fit: cover;
+}
+
+.card-contains {
+    position: relative;
+    perspective: 1000px;
+}
+
+.rotate-card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+
+.cara {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cara.card-front {
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1250px) {
+
+    .cards-contains .card, .card img {
+   
+        height: 100px ;
+        width: 100px;
+     
+    
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    .game{
+  
+        padding: 0 20px !important;
+       
+    }
+    
+
+    
+    
+}

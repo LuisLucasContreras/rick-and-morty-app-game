@@ -1,0 +1,98 @@
+.contain-cards{
+    min-height: 500px;
+    width: 74%;
+  
+    margin-top: 150px;
+}
+
+.card-game{
+    margin-bottom: 120px !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px 30px;
+    color: white;
+    /* border: 1px solid rgba(246, 255, 0, 0.515); */
+    background-color: rgba(18, 18, 18, 0.179);
+    /* border-radius: 6px; */
+    align-items: flex-start !important;
+}
+
+
+
+.card-game h2{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.card-game .card-body{
+    
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+.card-game .clm-1{
+    min-width: 180px;
+    align-items: flex-start !important;
+    margin-right: 45px;
+    row-gap: 28px; 
+}
+.card-game .clm-2{
+    /* max-width:76% !important; */
+    width: auto;
+}
+
+
+.box{
+	
+	position: relative;
+	
+}
+
+.box:after, .box:before{
+	mix-blend-mode:multiply;
+	filter:none;
+	z-index: -1;
+    top: 0;
+	content:'';
+    left: 0;
+	width:calc(100% + (50px * 2));
+	height:calc(100% + (50px * 2));
+	position: absolute;
+	display: block;
+	animation: border 10s ease-in-out infinite;
+	transform:translateX(-50px) translateY(-50px);
+}
+
+@media screen and (max-width: 568px) {
+    .card-body{
+       flex-direction: column;
+    }
+
+    .clm-2{
+        margin-top: 26px;
+    }
+}
+
+
+
+@keyframes border {
+  0%, 100% {
+    -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+            clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+  }
+  50% {
+    -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+            clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+  }
+}
+
+.box:after{
+	animation-delay: -5s;
+	background-color: #93e1d8;
+	clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+}
+.box:before {
+	background-color: #AA4465;
+	  clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+}
+

@@ -1,0 +1,186 @@
+.titulo{
+    margin-top: 50px;
+    color: white;
+    justify-content: center!important;
+    align-items: center!important;
+    font-size: 40px;
+}
+
+.cartas{
+    min-height: 300px;
+    gap: 150px 60px;
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+    margin-top: 50px;
+    padding:  0 0px;
+    margin-top: 180px;
+    margin-bottom: 100px;
+  
+}
+
+.carta {
+   background-color: transparent;
+    height: auto;
+    width: 300px;
+    padding: 15px 0;
+    background-color: #08070ae5;
+    position: relative;
+    border: 1px solid #121212;
+    box-shadow: 1px 1px 2px #0f0f0f;
+  
+    border-radius: 6px;
+ 
+}
+
+.carta .img-character {
+    position: absolute;
+    top: -100px;
+    width: 170px;
+    height: 170px;
+    border-radius: 6px;
+    transition: all 0.4s;
+    
+}
+
+.carta .isData {
+    margin-top: 6px;
+    width: 100%;
+    box-sizing: border-box;
+
+ }
+.carta .info-carta {
+    padding-top: 70px;
+    height: 80px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 1.4s;
+    /* align-items: flex-start !important; */
+}
+
+.carta .especie {
+    text-align: center;
+    font-size: 14px !important;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+
+
+.carta .info-carta .parrafo-info{
+    margin-top: 14px;
+    /* align-items: flex-start !important; */
+}
+
+.carta .info-carta .parrafo-info h4 ,.parrafo-info p{
+    margin: 0;
+    color: white;
+}
+
+.carta .info-carta .parrafo-info p{
+  text-align: center;
+    color: rgb(201, 201, 201);
+}
+
+.carta .info-carta h2, .carta .info-carta p{
+    color: #f3f3f3;
+    margin-bottom: 0;
+}
+
+.carta .info-carta h2 {
+    margin-top: 18px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.carta .info-carta .estado {
+ 
+    padding: 2px 8px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.carta .info-carta  .Alive {
+    border: 1px solid green;
+    color: green;
+   
+}
+.carta .info-carta  .Dead {
+    border: 1px solid red;
+    color: red;
+   
+}
+.carta .info-carta  .unknown {
+    border: 1px solid gray;
+    color: gray;
+   
+}
+
+/* .carta:hover .angle {
+    display: block;
+} */
+
+
+.angle {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+  
+    border: 1px solid #01acb3;
+    border-radius: 50%;
+    margin-top: 14px;
+    transform: rotate(-0deg);
+    cursor: pointer;
+    transition: transform 1.8s;
+    transition: display 1.8s;
+   
+}
+
+.cartaAbierta .angle{
+    transform: rotate(-180deg);
+}
+
+.cartaAbierta .info-carta{
+    height: 190px !important;
+    
+    
+}
+
+@media screen and (max-width: 568px) {
+
+    
+
+    .cartas{
+        gap: 150px 40px;
+        padding:  0 20px;
+      
+        /* transition: all 1.5s ; */
+    }
+
+    .carta .info-carta  {
+       
+        padding-top: 50px;
+      
+    }
+
+    .carta .info-carta h2 {
+       
+        font-size: 16px;
+      
+    }
+    .carta .info-carta h4, .info-carta p {
+       
+        font-size: 14px;
+      
+    }
+
+   
+
+    .carta .img-character {
+       top: -100px;
+        width: 150px;
+        height: 150px;
+        
+        
+    }
+}

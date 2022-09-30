@@ -1,0 +1,52 @@
+.header{
+   display: flex;
+   position: fixed;
+   box-sizing: border-box;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+   height: 70px;
+   width: 100%;
+   z-index: 2;
+   border: 1px solid rgba(0, 0, 0, 0.195);
+   background: #171717b8;
+   box-shadow: 0px 2px 3px rgba(26, 26, 26, 0.664);
+
+}
+
+.header nav a{
+   color: white;
+   text-decoration: none;
+   margin: 0 10px;
+  position: relative;
+ 
+}
+.header nav a::after{
+   content: '';
+   position: absolute;
+   width: 0;
+   bottom: -5px;
+   left: 0; transition: all 0.3s ease-in-out;
+   height: 2px;
+   background-color: rgb(0, 220, 22);
+}
+
+.header nav .active::after{
+  width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 568px) {
+
+   .header nav{
+      padding-right: 0px;
+   }
+    
+   .header img{
+       width: 100px;
+       
+   }
+   
+}
